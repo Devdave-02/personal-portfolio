@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio-website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+      body{
+        background-color: rgb(30, 30, 34);
+        
+        
+      }
+      
+      .header-container{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .logo{
+        height: 100px;
+        width: 300px;
+        margin-left: 100px;
+      }
+
+      .globe{
+        height: 70px;
+        width: 100px;
+
+      }
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 0;
+        background-color: rgb(30, 30, 34);
+      }
+
+      .text{
+        font-size: 45px;
+        flex: 2;
+        margin-left: 100px;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 700;
+      }
+
+      .diagram{
+        flex: 1;
+        margin-right: 250px;
+        margin-left: 0px;
+      }
+
+      .text-2{
+         font-size: 25px;
+         color: rgba(255, 255, 255, 0.8);
+         margin-top: 48px;
+         font-size: 16px;
+         font-family: sans-serif;
+         font-weight: 100;
+
+      }
+       
+      .Text-Yellow{
+        color: rgba(215, 170, 38, 0.86);
+        font-display: "Space Grotesk", sans-serif;
+        font-size: 45px;
+        line-height: 48px;
+        display: block;
+      }
+      .Text-White{
+        font-display: "Space Grotesk", sans-serif;
+        display: block;
+
+      }
+      
+      .image{
+        line-height: 44px;
+        width: 350px;
+      }
+
+      .button{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      border-radius: 15px;
+      background-color:  rgb(30, 30, 34); 
+      color:  rgba(255, 255, 255, 0.8);
+      border-top-color: rgba(215, 170, 38, 0.86);
+      border-right-color: rgba(215, 170, 38, 0.86);
+      border-bottom-color: rgba(215, 170, 38, 0.86);
+      border-left-color: rgba(215, 170, 38, 0.86);
+      margin-top: 50px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: "Space Grotesk", sans-serif;
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+      border-right-style: solid;
+
+      }
+      .button2{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      border-radius: 15px;
+      background-color: rgba(215, 170, 38, 0.86);
+      color:  rgba(255, 255, 255, 0.8);
+      border-top-color: rgba(215, 170, 38, 0.86);
+      border-right-color: rgba(215, 170, 38, 0.86);
+      border-bottom-color: rgba(215, 170, 38, 0.86);
+      border-left-color: rgba(215, 170, 38, 0.86);
+      margin-top: 50px;
+      margin-left: 40px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: "Space Grotesk", sans-serif;
+      border-top-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+      border-right-style: solid;
+      }
+      
+     .Clients-container{
+        margin-left: 100px;
+      }
+
+     .Clients{
+        color: rgba(215, 170, 38, 0.86);
+        font-size: 30px;
+        margin-bottom: 0px;
+
+      }
+      .Clients-text{
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 30px;
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 500;
+        margin-top: 0px;
+       }
+       .Text-brand{
+        display: block;
+  
+       }
+       .brand-container{
+        display: flex;
+        margin-left: 100px;
+        box-sizing: border-box;
+        column-gap: 48px;
+        font-family: "Space Grotesk", sans-serif;
+        overflow-x: scroll;
+        overscroll-behavior-x: none;
+        overscroll-behavior-y: none;
+        padding-bottom: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        scrollbar-width: none;
+        tab-size: 4;
+        text-size-adjust: 100%;
+        
+        
+        
+      
+       }
+       .square-1{
+        width: 350px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(251, 230, 231);
+        border-radius: 10px;
+        justify-content: center;
+        line-height: 24px;
+        min-width: 200px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        tab-size: 4;
+       }
+
+       .enterscale{
+        width: 150px;
+        line-height: 35px;
+        margin-top: 40px;
+        margin-bottom: 0;
+      
+       }
+       .enterscale-text{
+        display: block;
+        margin-top: 35px;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 0;
+       }
+       .enterscale-text2{
+        display: block;
+        margin-top: 10px;
+       }
+
+       .square-2{
+        width: 350px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color:  rgb(223, 207, 243);
+        border-radius: 10px;
+        border-radius: 10px;
+        justify-content: center;
+        line-height: 24px;
+        min-width: 200px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        tab-size: 4;
+       }
+       
+       .square-3{
+        width: 350px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border-radius: 10px;
+        justify-content: center;
+        line-height: 24px;
+        min-width: 200px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        tab-size: 4;
+       }
+
+       .enterscale3{
+        width: 50px;
+        line-height: 10px;
+        margin-top: 30px;
+        margin-bottom: 0;
+
+       }
+       .enterscale-text3{
+        display: block;
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      .square-4{
+        width: 350px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(217, 217, 248);
+        border-radius: 10px;
+        border-radius: 10px;
+        justify-content: center;
+        line-height: 24px;
+        min-width: 200px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        tab-size: 4;
+       }
+
+       .service-container{
+        margin-left: 100px;
+        margin-top: 90px;
+        margin-bottom: 0;
+       }
+
+       .Service{
+        display: block;
+
+       }
+
+       .Service-text{
+        color: rgba(215, 170, 38, 0.86);
+        font-size: 18px;
+        font-family: "Space Grotesk", sans-serif;
+        line-height: 27px;
+        display: block;
+        margin-bottom: 0px;
+
+       }
+
+       .provide-container{
+         margin-left: 100px;
+         font-family: "Space Grotesk", sans-serif;
+         display: flex;
+         gap: 30px;
+         overflow-x: scroll;
+         overflow-x: none;
+         overscroll-behavior-y: none;
+         scrollbar-width: none;
+        
+        
+       }
+
+      
+       .provide-text{
+        margin-left: 0px;
+       }
+
+       .provide{
+        font-family: "Readex Pro", sans-serif;
+        font-size: 35px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: 0px;
+        
+       }
+       .provide-text-2{
+        display: block;
+        
+       }
+
+
+       .Frontend-container{
+        display: flex;
+        font-family: "Space Grotesk", sans-serif;
+        column-gap: 30px;
+         
+
+       }
+
+       .frontend-box{
+        background-color:  rgb(241, 240, 249);
+        border-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-style: solid;
+        border-bottom-width: 0px;
+        border-left-color: rgb(229, 231, 235);
+        border-left-style: solid;
+        border-left-width: 0px;
+        border-right-color: rgb(229, 231, 235);
+        border-right-style: solid;
+        border-right-width: 0px;
+        border-top-color: rgb(229, 231, 235);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-style: solid;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        font-family: "Space Grotesk", sans-serif;
+        border-top-style: solid;
+        height: 300px;
+        width: 400px;
+        padding-bottom: 48px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 48px;
+        text-align: center;
+      
+    
+       }
+       
+       .Frontend{
+         display: block;
+         font-size: 25px;
+         font-weight: 500;
+         font-family: "Space Grotesk", sans-serif;
+
+       }
+       .design{
+        display: block;
+        font-size: 20px;
+        font-family: "Space Grotesk", sans-serif;
+      
+       }
+
+       .scalable{
+        display: block;
+        font-size: 20px;
+        font-family: "Space Grotesk", sans-serif;
+       }
+
+       .stack{
+        display: block;
+        font-size: 20px;
+        font-family: "Space Grotesk", sans-serif;
+       }
+
+       .Backend-box{
+        background-color: rgb(241, 240, 249);
+        border-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-style: solid;
+        border-bottom-width: 0px;
+        border-left-color: rgb(229, 231, 235);
+        border-left-style: solid;
+        border-left-width: 0px;
+        border-right-color: rgb(229, 231, 235);
+        border-right-style: solid;
+        border-right-width: 0px;
+        border-top-color: rgb(229, 231, 235);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-style: solid;
+        border-top-width: 0px;
+        font-family: "Space Grotesk", sans-serif;
+        height: 300px;
+        width: 400px;
+        box-sizing: border-box;
+        font-family: "Space Grotesk", sans-serif;
+        padding-bottom: 48px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 48px;
+        text-align: center;
+        
+
+       }
+       .UX-Design-box{
+        background-color: rgb(226, 246, 224);
+        border-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-style: solid;
+        border-bottom-width: 0px;
+        border-left-color: rgb(229, 231, 235);
+        border-left-style: solid;
+        border-left-width: 0px;
+        border-right-color: rgb(229, 231, 235);
+        border-right-style: solid;
+        border-right-width: 0px;
+        border-top-color: rgb(229, 231, 235);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-style: solid;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        font-family: "Space Grotesk", sans-serif;
+        border-top-style: solid;
+        height: 300px;
+        width: 400px;
+        padding-bottom: 48px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 48px;
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        
+
+       }
+       .QA-box{
+        background-color: rgb(224, 238, 246);
+        border-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-style: solid;
+        border-bottom-width: 0px;
+        border-left-color: rgb(229, 231, 235);
+        border-left-style: solid;
+        border-left-width: 0px;
+        border-right-color: rgb(229, 231, 235);
+        border-right-style: solid;
+        border-right-width: 0px;
+        border-top-color: rgb(229, 231, 235);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-style: solid;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        font-family: "Space Grotesk", sans-serif;
+        border-top-style: solid;
+        height: 300px;
+        width: 400px;
+        padding-bottom: 48px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 48px;
+        text-align: center;
+        font-family: "Space Grotesk", sans-serif;
+        
+
+
+       }
+      
+
+       .stats-container{
+        margin-left: 100px;
+        margin-top: 100px;
+        margin-bottom: 0; 
+        margin-bottom: 0px;
+       }
+       .stat-text{
+        color: rgba(215, 170, 38, 0.86);
+        font-size: 18px;
+        font-family: "Space Grotesk", sans-serif;
+        line-height: 27px;
+        display: block;
+        margin-bottom: 0px;
+
+       }
+       .kitchening-container{
+        margin-left: 100px;
+        margin-top: 0px;
+       }
+      
+       .kitchening-text{
+        font-family: "Readex Pro", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color:  rgba(255, 255, 255, 0.8);
+        margin-top: 5px;
+
+       }
+       .Cat-text{
+         display: block;
+       }
+
+       .Project-container{
+         display: flex;
+         flex-direction: row;
+         gap: 100px;
+         margin-left: 200px;
+         text-align: center;
+         justify-content: space-around;
+         height: 200px;
+
+       }
+
+      
+       .comp-project{
+        font-size: 28px;
+        color:  rgba(255, 255, 255, 0.8);
+        font-family: "Readex Pro", sans-serif;
+       }
+
+       .project-number{
+        display: block;
+        font-size: 45px;
+        color:  rgba(255, 255, 255, 0.8);
+        font-family: "Readex Pro", sans-serif;
+       }
+     
+       .footer-conatiner{
+        background-color: rgba(215, 170, 38, 0.86);
+        border-bottom-color: rgb(229, 231, 235);
+        border-bottom-style: solid;
+        border-bottom-width: 0px;
+        border-left-color: rgb(229, 231, 235);
+        border-left-style: solid;
+        border-left-width: 0px;
+        border-right-color: rgb(229, 231, 235);
+        border-right-style: solid;
+        border-right-width: 0px;
+        border-top-color: rgb(229, 231, 235);
+        border-top-style: solid;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: 550px;
+        width: auto;
+        
+        
+
+       }
+
+       .footer-box{
+         margin-left: 100px;
+       }
+
+       .footer-text{
+         display: block;
+         font-family: "Space Grotesk", sans-serif;
+         font-size: 64px;
+         font-weight: 500;
+         color:  rgba(255, 255, 255, 0.8);
+         margin-bottom: 0px;
+      
+       }
+       .footer-text2{
+        color: rgba(255, 255, 255, 0.8);
+        display: block;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 40px;
+
+       }
+       .footer-text3{
+        color: rgba(255, 255, 255, 0.8);
+        display: block;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 40px;
+
+       }
+       .footer-text4{
+        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+        display: inline;
+        font-family: "Space Grotesk", sans-serif;
+        text-decoration-color: rgba(255, 255, 255, 0.8);
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+       }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="header-container">
+        <div class="header">
+         <div>
+          <img class="logo" src="Logo.56d082b4 (1).png">
+          </div>
+
+          <div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="text">
+          <p>
+            Hello!, I‘m a
+            <span class="Text-Yellow">Software Engineer.</span>
+          </p>
+          <p class="text-2">
+            Cooking state-of-the-art, easy-to-use, user-friendly websites <span class="Text-White">and applications.</span>
+          </p>
+    
+          <button class="button">Let's Talk</button>
+          <button class="button2">My Resume</button>
+        </div>
+    
+        <div class="diagram">
+          <img class="image"   src="memoji.e3b54e29.svg">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Clients-container">
+      <p class="Clients">Clients</p>
+      <p Class="Clients-text">Working with various <span class="Text-brand">brands provides
+        me with</span><span>invaluable experiences.</span></p>
+    </div>
+
+
+    <div class="brand-container">
+      <div class="square-1">
+        <img class="enterscale" src="enterscale.4e7e926b.png">
+        <div>
+          <span class="enterscale-text">Enterscale</span>
+          <span class="enterscale-text2">Engineering Lead & Lead Frontend Engineer</span>
+        </div>   
+      </div>
+
+      <div class="square-1">
+        <img class="enterscale" src="sanity.5d57cadf.svg"> 
+        <div>
+          <span class="enterscale-text">Sanity io</span>
+          <span class="enterscale-text2">Community Ambassador</span>
+        </div>   
+      </div>
+
+
+      <div class="square-1">
+        <img class="enterscale" src="fp.0267711a.svg"> 
+        <div>
+          <span class="enterscale-text">Fountain Pay</span>
+          <span class="enterscale-text2">Frontend Engineer</span>
+        </div>   
+      </div>
+
+
+      <div class="square-2">
+        <img class="enterscale" src="dym.9d5d1f80.svg"> 
+        <div>
+          <span class="enterscale-text">Dynamixity</span>
+          <span class="enterscale-text2">Engineering Lead.</span>
+        </div>   
+      </div>
+
+
+      <div class="square-3">
+        <img class="enterscale3" src="lahhf.c74519f4.svg"> 
+        <div>
+          <span class="enterscale-text3">Lahhf</span>
+          <span class="enterscale-text2">UX Engineer.</span>
+        </div>   
+      </div>
+
+
+      <div class="square-4">
+        <img class="enterscale3" src="evea.995e5836.svg"> 
+        <div>
+          <span class="enterscale-text3">Evea</span>
+          <span class="enterscale-text2">Frontend Engineer.</span>
+        </div>   
+      </div>
+    </div>
+  
+
+
+    <div class="service-container">
+        <p class="Service-text">Services.</p>
+      </div>
+
+    
+    <div class="provide-container">
+      <div class="provide-box">
+        <p class="provide">I Provide a Wide 
+          <span class="provide-text-2">Range of Digital</span>
+           <span>Services.</span></p> 
+      </div>
+
+
+      <div  class="Frontend-container">
+        <div class="frontend-box">
+          <p class="Frontend">Frontend.</p>
+          <p class="design"> I design quality, user-friendly <span class="scalable">and scalable products with </span> <span class="stack">any stack.</span></p>
+        </div>
+  
+        <div class="Backend-box">
+          <p class="Frontend">Backend.</p>
+          <p class="design"> I design and develop web <span class="scalable">applications across multiple APIs, third party integrations</span> <span class="stack">and databases.</span></p>
+        </div>
+  
+        <div class="UX-Design-box">
+          <p class="Frontend">UI/UX Design.</p>
+          <p class="design"> I care about details and consider the motion design of <span class="scalable">affordances to be crucial in creating effective and</span> <span class="stack">intuitive interfaces.</span></p>
+        </div>
+
+        <div class="QA-box">
+          <p class="Frontend">QA Testing.</p>
+          <p class="design">I perform functionality testing, integration<span class="scalable"></span>testing, and regression<span class="stack">testing manually.</span></p>
+        </div>
+  
+      </div>
+
+    </div>
+
+    
+    
+      <div class="stats-container">
+        <p class="stat-text">Statistics.</p>
+      </div>
+
+      <div class="kitchening-container">
+        <p class="kitchening-text">My kitchening <span class="Cat-text">catalogue.</span></p>
+      </div>
+
+      <div class="Project-container">
+        <div class="project">
+          <p class="comp-project">
+            Projects Completed.
+             <span class="project-number">36</span>
+            </p>
+        </div>
+
+        <div class="project">
+          <p class="comp-project">
+            Happy Clients.
+             <span class="project-number">11</span>
+            </p>
+        </div>
+
+        <div class="project">
+          <p class="comp-project">
+            Open Source Contributions.
+             <span class="project-number">2</span>
+            </p>
+        </div>
+      </div>
+
+
+       <div class="footer-conatiner">
+         <div class="footer-box">
+          <p class="footer-text">
+            send a
+            <br>
+            message!
+          </p>
+
+          <p class="footer-text2">
+            Got a question or proposal, 
+            or just want to say
+            <br>
+            hello? 
+            Go ahead.
+          </p>
+         
+          <p class="footer-text3">
+            Shoot a mail
+          </p>
+
+           <p class="footer-text4">
+            ayooluwaisrael.ai@gmail.com
+           </p>
+         </div>
+       </div>
+    
+  </div>
+  </body>
+</html>
