@@ -1,0 +1,832 @@
+body{
+  background-color: white;
+  transition: background 0.3s ease, color 0.3s ease;
+  color: black;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  
+}
+
+.header-logo{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.logo{
+  height: 100px;
+  width: 300px;
+  padding-left: 0px;
+
+}
+
+.header-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.toggle-button{
+  height: 250px;
+  width: 250px;
+  cursor: pointer;
+  border-style: none;
+  font-size: 30px;
+  
+}
+
+
+
+@media (max-width: 480px) {
+  .logo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px; 
+  } 
+
+}
+
+.dark-mode{
+  background-color:   rgb(30, 30, 34);
+  color: black;
+   
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 0;
+}
+
+.text{
+  font-size: 45px;
+  flex: 2;
+  margin-left: 100px;
+  color: rgba(215, 170, 38, 0.86);
+  font-weight: 700;
+}
+
+.diagram{
+  flex: 1;
+  margin-right: 250px;
+  margin-left: 0px;
+}
+
+.text-2{
+   font-size: 25px;
+   color: rgba(215, 170, 38, 0.86);
+   margin-top: 48px;
+   font-size: 16px;
+   font-family: sans-serif;
+   font-weight: 100;
+
+}
+ 
+.Text-Yellow{
+  color: rgba(215, 170, 38, 0.86);
+  font-display: "Space Grotesk", sans-serif;
+  font-size: 45px;
+  line-height: 48px;
+  display: block;
+}
+.Text-White{
+  font-display: "Space Grotesk", sans-serif;
+  display: block;
+
+}
+
+.image{
+  line-height: 44px;
+  width: 350px;
+}
+
+.button{
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 50px;
+padding-right: 50px;
+border-radius: 15px;
+background-color:  rgb(30, 30, 34); 
+color:  rgba(255, 255, 255, 0.8);
+border-top-color: rgba(215, 170, 38, 0.86);
+border-right-color: rgba(215, 170, 38, 0.86);
+border-bottom-color: rgba(215, 170, 38, 0.86);
+border-left-color: rgba(215, 170, 38, 0.86);
+margin-top: 50px;
+cursor: pointer;
+font-size: 16px;
+font-family: "Space Grotesk", sans-serif;
+border-top-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-right-style: solid;
+
+}
+.button2{
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 50px;
+padding-right: 50px;
+border-radius: 15px;
+background-color: rgba(215, 170, 38, 0.86);
+color:  rgba(255, 255, 255, 0.8);
+border-top-color: rgba(215, 170, 38, 0.86);
+border-right-color: rgba(215, 170, 38, 0.86);
+border-bottom-color: rgba(215, 170, 38, 0.86);
+border-left-color: rgba(215, 170, 38, 0.86);
+margin-top: 50px;
+margin-left: 40px;
+cursor: pointer;
+font-size: 16px;
+font-family: "Space Grotesk", sans-serif;
+border-top-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-right-style: solid;
+text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+    
+  } 
+  
+  .button2{
+    margin-left: 0px;
+  
+  }
+
+  .diagram{
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .image{
+    text-align: center;
+    align-items: center;
+    margin-left: 28px;
+  }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .header{
+      
+    }
+    
+    }
+    
+
+
+.Clients-container{
+  margin-left: 100px;
+}
+
+.Clients{
+  color: rgba(215, 170, 38, 0.86);
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+
+@media (max-width: 480px) {
+  .Clients-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+    
+  } 
+
+  .Clients{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+    
+  }
+  }
+
+.Clients-text{
+  color: rgba(215, 170, 38, 0.86);
+  font-size: 30px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 500;
+  margin-top: 0px;
+ }
+
+
+ @media (max-width: 480px) {
+  .Clients-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+    
+  } 
+
+}
+ .Text-brand{
+  display: block;
+
+ }
+ .brand-container{
+  display: flex;
+  margin-left: 100px;
+  box-sizing: border-box;
+  column-gap: 48px;
+  font-family: "Space Grotesk", sans-serif;
+  overflow-x: scroll;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  padding-bottom: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  scrollbar-width: none;
+  tab-size: 4;
+  text-size-adjust: 100%;
+
+ }
+ .square-1{
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(251, 230, 231);
+  border-radius: 10px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 200px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  tab-size: 4;
+ }
+
+ .enterscale{
+  width: 150px;
+  line-height: 35px;
+  margin-top: 40px;
+  margin-bottom: 0;
+
+ }
+ .enterscale-text{
+  display: block;
+  margin-top: 35px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0;
+ }
+ .enterscale-text2{
+  display: block;
+  margin-top: 10px;
+ }
+
+ .square-2{
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color:  rgb(223, 207, 243);
+  border-radius: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 200px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  tab-size: 4;
+ }
+ 
+ .square-3{
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 200px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  tab-size: 4;
+ }
+
+ .enterscale3{
+  width: 50px;
+  line-height: 10px;
+  margin-top: 30px;
+  margin-bottom: 0;
+
+ }
+ .enterscale-text3{
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.square-4{
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(217, 217, 248);
+  border-radius: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 200px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  tab-size: 4;
+ }
+
+ @media (max-width: 480px) {
+  .brand-container{
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+  } 
+
+}
+ .service-container{
+  margin-left: 100px;
+  margin-top: 90px;
+  margin-bottom: 0;
+ }
+
+ .Service{
+  display: block;
+
+ }
+ .Service-text{
+  color: rgba(215, 170, 38, 0.86);
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 27px;
+  display: block;
+  margin-bottom: 0px;
+
+ }
+ .provide-container{
+   font-family: "Space Grotesk", sans-serif;
+   display: flex;
+   width: 100%;
+   overflow: hidden;
+
+ }
+
+ .provide-box{
+  flex: 1;
+  display: block;
+  margin-left: 100px;
+
+ }
+
+ .provide{
+  font-family: "Readex Pro", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: rgba(215, 170, 38, 0.86);
+  margin-top: 0px;
+  
+ }
+ .provide-text-2{
+  display: block;
+  
+ }
+ .Frontend-container{
+  display: flex;
+  flex-direction: row;
+  flex: 4;
+  font-family: "Space Grotesk", sans-serif;
+  gap: 20px;
+  line-height: 24px;
+  overflow-x: scroll;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  padding-bottom: 5px;
+  padding-right: 32px;
+  padding-top: 5px;
+  row-gap: 48px;
+  scrollbar-width: none;
+  tab-size: 4;
+  text-size-adjust: 100%;
+  
+
+  
+ }
+
+
+ .frontend-box{
+  background-color:  rgb(241, 240, 249);
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(229, 231, 235);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(229, 231, 235);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(229, 231, 235);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  border-top-style: solid;
+  height: 430px;
+  width: 650px;
+  color: black;
+  padding-bottom: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 48px;
+  text-align: center;
+
+
+ }
+ .Frontend{
+   display: block;
+   font-size: 25px;
+   font-weight: 500;
+   font-family: "Space Grotesk", sans-serif;
+
+ }
+ .design{
+  display: block;
+  font-size: 20px;
+  font-family: "Space Grotesk", sans-serif;
+
+ }
+ .scalable{
+  display: block;
+  font-size: 20px;
+  font-family: "Space Grotesk", sans-serif;
+ }
+
+ .stack{
+  display: block;
+  font-size: 20px;
+  font-family: "Space Grotesk", sans-serif;
+ }
+
+ .Backend-box{
+  background-color: rgb(241, 240, 249);
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(229, 231, 235);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(229, 231, 235);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(229, 231, 235);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  font-family: "Space Grotesk", sans-serif;
+  height: 430px;
+  width: 650px;
+  color: black;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  padding-bottom: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 48px;
+  text-align: center;
+ }
+
+ .UX-Design-box{
+  background-color: rgb(226, 246, 224);
+  border-radius: 10px;
+  color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(229, 231, 235);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(229, 231, 235);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(229, 231, 235);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  border-top-style: solid;
+  height: 430px;
+  width: 650px;
+  padding-bottom: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 48px;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+ }
+
+
+ .QA-box{
+  background-color: rgb(224, 238, 246);
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(229, 231, 235);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(229, 231, 235);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(229, 231, 235);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  border-top-style: solid;
+  height: 430px;
+  width: 650px;
+  color: black;
+  padding-bottom: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 48px;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+ }
+
+  @media (max-width: 480px) {
+  .service-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+    
+  } 
+
+  .provide-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+
+
+  }
+   .provide-container{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+   }
+   .Frontend-container{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+}
+
+  
+@media (min-width: 481px) and (max-width: 768px) {
+  {
+
+
+
+  } 
+  }
+
+ .stats-container{
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 0; 
+  margin-bottom: 0px;
+ }
+ .stat-text{
+  color: rgba(215, 170, 38, 0.86);
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 27px;
+  display: block;
+  margin-bottom: 0px;
+
+ }
+ .kitchening-container{
+  margin-left: 100px;
+  margin-top: 0px;
+ }
+
+ .kitchening-text{
+  font-family: "Readex Pro", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color:  rgba(215, 170, 38, 0.86);
+  margin-top: 5px;
+
+ }
+ .Cat-text{
+   display: block;
+ }
+
+ .Project-container{
+   display: flex;
+   flex-direction: row;
+   gap: 80px;
+   margin-left: 150px;
+   text-align: center;
+   justify-content: space-around;
+   height: 200px;
+
+ }
+ .comp-project{
+  font-size: 28px;
+  color:  rgba(215, 170, 38, 0.86);
+  font-family: "Readex Pro", sans-serif;
+ }
+
+ .project-number{
+  display: block;
+  font-size: 45px;
+  color:  rgba(215, 170, 38, 0.86);
+  font-family: "Readex Pro", sans-serif;
+ }
+
+ 
+@media (max-width: 480px) {
+  .stats-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+  
+  .stat-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+
+  }
+  .kitchening-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+
+  }
+  .Project-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+    gap: 5px;
+  } 
+  }
+  
+ 
+ .footer-conatiner{
+  background-color: rgba(215, 170, 38, 0.86);
+  border-bottom-color: rgb(229, 231, 235);
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(229, 231, 235);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(229, 231, 235);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(229, 231, 235);
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 550px;
+  width: auto;
+ }
+
+ .footer-box{
+   margin-left: 100px;
+ }
+
+ .footer-text{
+   display: block;
+   font-family: "Space Grotesk", sans-serif;
+   font-size: 64px;
+   font-weight: 500;
+   color:  rgba(255, 255, 255, 0.8);
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+
+ }
+ .footer-text2{
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 40px;
+
+ }
+ .footer-text3{
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 40px;
+
+ }
+ .footer-text4{
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  display: inline;
+  font-family: "Space Grotesk", sans-serif;
+  text-decoration-color: rgba(255, 255, 255, 0.8);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+ }
+ 
+@media (max-width: 480px) {
+  .footer-conatiner{
+    text-align: center;
+    align-items: center;
+    margin-top: 300px;
+    width: 110%;
+  }
+
+  .footer-box{
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+    width: 98%;
+  }
+}
